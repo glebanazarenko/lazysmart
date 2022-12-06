@@ -48,6 +48,8 @@
         }
    }
 
+   $count_click_server += 1;
+
 
     //----------------------------------------------------------------------------------------
     
@@ -92,7 +94,6 @@
             $temp = $id * 50;
         }
         $date_today = date("Y-m-d H:i:s");
-        
 
         $result = mysqli_query($mysql, "SELECT COUNT(*) as coun from HYSTORY as h WHERE h.DEVICE_ID = '$id'");
         $Arr = mysqli_fetch_array($result);
